@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYMAAACCCAMAAACTkVQxAAABOFBMVEX///8AAAD/aQD/bADNzc3/aAD/fSqJiYnHx8fx8fFGRkbl5eWwsLBgYGCSkpKEhIR2dnaZmZn/YgBNTU3U1NTb29v4+Pj/YAC2trZtbW22SwDTVwBBQUFYWFjAwMDvYgDq6uppKwCgQgDuYgCnp6fHUgAyMjJJHgApKSnlXgBVIwBiKAA5FwAZCgB6enrcWgAnEAATExOIOACwSAD/1b/JUwCRPAA3NzcdHR0sLCxPIAAvEwD/onL/387/7+VDGwB2MQASBwD/yKwiDgB+NAD/m2T/jUn/tI2YPgD/vJlOQzz/gz3/gC//qoH/3cn/y7D/k1j/6t7OvrQtHQ+xoZZqX1diUkdENCjQwrr/tpI7LyaXhHgeAACDcGNHLhq5qZ5oUkPJjW7NtKRaPCark4J7YlA+JQ+6YiiG+QuCAAAXtklEQVR4nO1daUPbRrdGlo1tdhxbBhuwDXaIFzC2E5aQYhxIQpqlCUka3tu3N3dpe///P7iaRbOPRiMlcUk5/dAgSyPNeWbOPjMzM4S8X148e/561oZeP3/25uXThz+dzdzRV6D3z8vlQiFjS4VCoQxo9snLt9Puwi2nsyflQioB+WD4QLx6cYdDbHroJkKAIFEou08eetPuza2kp+XM14AggOHZL3f6wZbeFr4aBAEMT36adqduF525XxUCBEPh3cNp9+s20bOvogtEKpRf3aEQlX4qfwsIIArP7yRSNPo20wChUHh2p50jkPetpgGgTCH1YtodvAX08Fti4KNQnr0TSCZ6E10UuT7FQeHrTIV8Wk350Kfq6bWFZrO5NR/euKdpPPyx+Zzf+MJaztC4kZ4bDVMX8d6tVba3RzsxUCi/Sq4Vig8cLa3pHsqtM3fda2rRmt/QN97UPbS2ydy1uJWkc7MGDNz+cNzrXLVrDfS2RtsehUIqqTwq6Znk06rqEa85EO9brysbz0s3srSsfCQrf0T8GI2Bo+6V9LKqPQiZ8tPYHwhpXfoKjuryEwtKxmZVjFoKb7woPeCpn9BOGRMZIGixL+meT8D/+nHk0Zu4HwgpnEuOJAnyi5o7B2m58U3NvZiy4v2l+5o750rxeqdnf2qn3ycS6KoxcXZdtw3+GNtD4IPwLN73ITJgIAqjUoj2kASXdy+88RXh/q2Qe3OxeqeFoNqhTbd8rbzTPXWxaNpOxZkJ72J9HyI7DNKhNy+Jjdth0Ay9OZZu1kHACSGoAlxfHbsp+Pd4ZI9BqpAABCsMwhW4LLetMFgzNK6QdUbScWwMW+xeja6GjcluDWDgpvqjywl6VTeGkVqIL45sMPBCBBEiQWLYYFA0tX1ct++dhl9tyOsK9A3cWqvqI1A9P2XetRdDM5ef2H8fIkPHOQxW+N8Wl7PZFV6LPuA9BQsMvCOe4evZbHb9mH+ffe807KodAD4HbPZxaO2iVwzWl/E3x3AUYltHpIfNPKWcEgNupG7mkDHqzS+zl3mbn2Cw6qkaZzFY5cAp4caLnOmsdRm1pGIVGPsN0By5UOv6f60vOwP4gnn01TVrDGL7CcoOUrnPYsCOVFbo1NnhzkUXyA+soqBQMhjkmSaO2DZKjDfywLp3KgRal729CWjucQ2Odbe6539KfWbuPp7ESOROrDFIZQrxPGYlBpRNDAaMTTQQ4jiMz7DPXo+OATMNNvi284wSsp4IMgSVoK3JuHdQcbGNBIwuh8hR9DG9GB7zbCyXnvRvgbmoxIARC1IojZkJedVlNcAMBpTR98W2mSmyads7CYJzxN5R3w2CdcAxIyaXb5ut52fqaO51YhhHsSxU0j/W/lZi4ChvReQpf/RIxM6EAaNq6lLjzAQMD+XKJEIAnbC9Chul7rGfXFqHI6yOjIHzGHo5jkog3WODNyoMqBN7T9EMjfOwQp7YNSYM6OOqQB4VdbbCSOBQBjbChuXcbUF8zjnOiUdAkJnsBqTGIJOJEcmOjMFSKCPoRJijIpGKchMGVJbVFY1TS0oZag0hgX+PQBu7HPv2hFc2UacxCN0auRmwvVarVrYPDw+Hh9utmjqkEUMazUfGIJxNjNFE5QXFQC3oKAbkkqCQEVGAVVMwjAQGVUEbkyodx+6IxzUHLe1jj2ih04pvo9ZqOzv9yuHleOIwND5UOnLlXyy/kbFCWVGrwoDIFTUf6DSpk2t1co2NMygwoEyWQqmQaPzVsnsigw5gI+ejSqWCLjT4wYdVD4jSEs7sPu4dOGpqKFDIuLa2EZXy7JMqDMildWVDC+R3GmamGLCGlAIDeqM6U0DdQMvuiQzqBwGJ3Sq64HsjHMvQm6D3k+c9dzUNZYlk7S5T1iXEgIJJx/y8ofEV+UY1BjS3Ztk9kT9uquUrAOeghVnXFiMgHtT/df9f9ZU5FdM7l1f+JKqMgvDSrhTUyJQt1TLxjY7YqzEwoFHPouKaunHFPFAmT78iBjsgb9AINC3w2AQ172UDgZjbZ5PhJ5v+XxfbO8QwSrUewx8uJBAKlsE74nhxnFVhQGIGakeJBv+p3CGsO1Y3rtAHUgoC0teSRW4ftHFJ/95WzLw80YwgyFVMF2GUC3x2o8ay202N4CftSZEly4lwouy8CgMyKB4oHaV98kidXCMAa4LUCrtIHRslNtnAqnPyPJj4bQwpIykGa5sb91bDPEDfTmqIAx5B6oyliWCnEUjnOaNfhQENXCtzu+TXB0T2eySuzY01FQY0Aq7pPybbYIXAs0u/iV4wilkMwGi5t6KehIg2ggcVIBwKIGQKNt9INSk3BlQYUO2tsh/pE3QkUylfUt9KMaAAq1KW9NVqdaEngWWgiRbiPnSBQexiGbNhIbShBXVGASdF28Ll8kuLbyQSe4Oz0FQYMHlMxZxdVDxBVQR3qwoDeqvKSSMC0zqfybMGumhVWFU3noDqL+CigakF9E1o/YyvsC6VbrE7BG2K0b2Ma/GNpHP8NDTE7MR6CDaawKjkRfX9KgzolFGMRybXb9E1SAoMDn0WjbBIAsP4OI+twzDXalWf0zlVToToK0SoKOKj0UoMmPIrkU8MC+fIRWr081lmZeyaCX6L6oaJqdqGi0SdDBvZgwn9LrxQc6D0Kx2nNWESTMfaGCpKSIiTxCLBT2wdQdcpMaA8FcN288o0C7GUOMtUgwFbVFHS3K7IW5hI4BdT2tgjqIBRkwMC/57WLvLHal8zDXD8QxJGUQMWtOOCJlTnMtnc7jplh8emgqnnT9sQZg39gQ0anzCNLDFhP7b8VO0dhpHIr3MRA+CyIU3g9+KBrpBsnRYAyBMBagSxTDWSMPLSTaZ0dznLETVT7mWzqzh7z00EnyFb+bzn5YtZrvgBgemVmk3qZGob3/Ab38L85mvs9tOg7Xxun7taT4yB22p0HsMSuwnDQOTZgxG5mFaNX2/gbOvTOVDLjERhFMFXThtLhRh6gMMPq+L1ObE+FI3UUkjFu0xYeol1rPfnxE+MUfkrj1oQZeiB1jAm4J8DJP1gQcXRcroutrIFDFMmc1PjkzgXjsIymjV+27xjR3iwGmp4sSQyl4LxhDhQPzbcZi+JdPVFcCLsIHaitrEsbsIvH8wtLje3isWST8VibmHJv9oYDhuNTqfTg/S40xi2+jju54LmLiRf2VhisaztqZqwWsgbuIu4aSpa1DDXUGi3GadkQQkBqi56hLjWRa3vo1HmNS2mcO8Kxo+QphdfYnbTdAXsOgq053woCNigMSxpkAk3ngu7R2+02GNwCBockWgFpEFgCBT3QxeucHTRCopj8LRi5oEpp+kpQ+MhRAIQeb04OgpsyrgYhBXWL8Zbi6PGAJr0hySDENB+EHUvLkWeDRUXY1AVXmIsNfKslKbDhTPltUqIqLiOjYF+gYltnCgUgxSMtHWxBH/MvOZkNYDB21o1FMti8o1SFAIRMcgYFEISDGaKqkn0gInkxMdAswxkMfbyTDUGsOz6Ak8KcUna+gJ5W9qwlgtQDwdPRQyMHkIiDPxvE4fICec3J8HA1+iifbQecx2UHoMUrLLG/95RfNBmM/DWSmyt+fkIFAPAVOaoG1xsVEFEXMagYFi4nBADv4G1lUBzDRabwjBNhoGv+BeISBqsh4eUTaSGwIUMDKIPHfVHnSwv1GFX6WTo0QovnypctYUU0jMpZYqBVN3JkRYD2EjRJ9UYJRgcKX6kRH1gxY950Hgx8cZlGgygd1yhJUY6Guwv+NZSnnSowucyWfQkPzrzKvzTvgoGWiKffD+Uh3SW2zRuRxoMoCUThB92JnoQfNr0YQi0FO8Nu4xNJdcHZ2bDs8r/cAyQYRREo5HLFtDBeHd8usfDkPXmkZKa8HkC5GhAqsgYuO9DP+2fjgE0jIJUPLtIs1EFsaBau1/dPt9lUFioK1ldC0rGDhQvKYRjQAM/YYkLJqBsFauh+uDvigGK2gX8JJx0hjQS5/+r/ehyTKYC0l5CJsftw4acnirJVjY4CIRN+6G3EftEXQaqIWJIhFfoZqPdlog0ELjQMSN/XeIP2RNvc1P94QUzHZzHgshxU63h5fCR8iWm4l/iCoUnyUn0Td5ZIoRIUDY82ExyOfZL/SKTDoMGeG8g3N0q/hBV2t6tVZhFs3tiWCjFh7E5DExRO2wYmhK0eL6EFd4oCOcZTEoEz5c4MemopMMAKtNHAe8ySKJIiRh8c4qxXvUpTXsMZppzvhAwj0AQy41wm0A5X99smFMuW76/PRd7T5YopMMAcpUoWOQvqIwb/Hub6GeLrXVMjjIgL5oHFPG279l4dNJh8Igf9tVwDBiVoZ4qsTH4J1AoBkyOGIn8Kz2DA286JK8sYZBsU6MfhnT8qfL8xMO8G8JgrLjF0tI7DIwUigEd9thNk5LCHAg7PVaPR8DgThZBCsWAcbhqKDph2KNie3wYGQHLwt8fmDTsQfqAwQA5bXISQHjMagfUOwwQ6ZgJM/nsYpCRwTCKQUl3e/xRSIdBQ7RxqlpHOT4Gd7vzQ9KwB+4hxdv6E3BFWtWUhGJupPPDkZo7eAMdVvq7Y6NhZEmZlCF2/U8hjRJFIWkOFpSOEddymEm/e4h7dzoCpA7cqEhkGwoPcelH7CFYmP/4uWpH4zpnXk+7838T8tl60KhUmY31XTfY3ZcP/fTjGEZu22/rVP1b4fm0O/83oSDc2RuOWv2dlJvqt4Lom7hfnW0oAgS1h5JMYzCYfqiinsvpqnRLW6qU0PyWNp9U3Ipb5uXoSRjyLvSUpWXgYQgEFXpq7zqCe7AVXk75QEjbrM05g011Nm1rc+AMhGMK0LkHiyoU1mBxmFhAitakKDOrMCM0CMth5JeO5E+ApO+gyG3kKe9GxcCtDUlTau/abJqaKym5ogicf1cwIh+UaLDLCoOF9SdyeiBY781n8IIt6xSptyDtrM/1kIyrnJjW9q4jMRUuVYu2lyPYFZhpSzkPzGZR+N7hiJgcI0k/SwObWT3DzBxSQicxjq7R4QokSa2NNNXIdiLHOtHGlAlLhX3bY6FUCNOlxDNknJ6a93x3U7VRj2tMeZupzC5iSSi9ndRXiBPBu6+8n6yikMY1XWzDNhWyb4tqTx6O2N1ppfoP3xqqjs7HXG2E43QVGUkcMboE+9Tp02kAALbCEYxAxT4WqSiLAiOtw6GKkFS7iyzi1k1SJpFLknSgE5DVCHR5nFREQ/eq0GgEfllXnf8RMc6t9R+NLrudXZ8655W2isl089nHw1a7JvleoJXaoyG7WsH5fP2zowsymaNFkTCgdgrBQKiB4FcL0NW9UTBg4aQYSIUeFAN1BTY3DaTnWRaG74pJMQB00b28qrTbOztA1td2dtr9yuE5L4GcDx9nvoD/t1QNZlJGLzkuBvzOE3X+/qlgIBoXvNZQsjsCBgEUFwe743HvQqFUPnzMz8xPHHWZYxR18JUwENamTQUD8aN5ozchBlr67CMw4wFJpMnyl//1fTAQl4xPAwPp/JYBZw5/EwwmKzew8U/gD7VGjhK4phgIGxlks3S1mQED6WCWaWAgc4gzh78BBp+ukbjL/wr/VBd9RVimz2AgeVF03aUBA2ld/RQwoJYr8TtO2N9tMTi5Xv4cwv/P2ZuAXzfI3tUENwpmUcRgIHk+UTHgt/OYEgaE8xvURGNtWAsMYIoZOHneTTP76T/Ezv2abd4w4/U3fFm9rVGmECF3kBwDxSLW748BXdnfpN/ILqmwwADGf36lj569v7lZW/Bp7aYkcvT638HL1MHuSHHrxBgwBx5MEQMS4jjOM2KJib9aYADLen+PwLuZ6/90iOxTJ94ipfMTY0CjrpRJ3x0D2hhwr4lcYqKHFhhMwKMfjZw7+whqU38/Q6+SQn+Qom0pmBQDapY2VdvWfScMqH9Sn2HNVBo0iY4BWipuOIzw7Mt/OWB7kTrykHWiKFplUUIMqFm6yfz7e2NA3ww/yyORQhpRARyp+WSeBiif/N9vdcrUO/uf3/7Xv2Pv07Wvmr0JvF19vmkmo2mDp2QY0PPkjutTxEDceZh+OYmLdzqd3YPT04NTU806rrzulwuvn715+dMZZ7Lnvyz/CdXF0e83dXjlE3qPZhpEK3JMhgENVa7NTA8DGq3aFC+QVsgVU7LehVVfF64/iAuFcrngvnr35M2Ll09/AfPio+N8+HnxIz1/HlumXfU0iLjBbCIMqFkKco9Tw4B+aPBikhUZ1PkPOeiYpBEqq6DlLgAKAEYZFGrVS/Msmzw8CyYaoyhinWkSDGjqDK4/nhYG9Jx44hCUpMYd57QxrLRrpuwYLjmSJJYq/HkT+G/KoHX0uqIkGNBni3zHvy8G1DSjjjH5ziDx2dqpRStYR5EHeQMcqUDl5lPwDs3SNNPScEIJMKAmIAoTTwkDj+whwGz3QDOlOHIXsUwCB+zkjWSF8Of7LzSapIEg+iEg8TGgLMf8nRIG9PpgcTWXLpaK6a0s9RxxRUc0CPDeCeyCBESsKHp/88fnCWlfI4hsToWKj8Gc+OSUMDDtgoUEVDQEgri1vB8aUK9n12sf//jzA7zj88/ozl2dhrFYdBAXg30qhQOXcjoYKPe9Y2nOAgM8DSRRhLIAv+IW/1y9PvOwPtZCYFHgGBcDWspCfNHpYGDedDEXGYNgj1NJwsNp4K2tbd28x+4zngY6j69gziJTiosBIXo40FQwMOwJDAg6bpEwCLbjMnMU20S6iki7JQeJMaC1R1PBIEo+HHxiJAzwFo3SyUKilVnHs0Da0zd4oGC1Ai0pBkz1wjfGgKYFmPyYlMpWEajxi4AA2VNQ/KEsrPH+EjSs2TckY7kQMyEGLGtDMdhIC0S9i5ViuhS8nGKwXhQeoJ+zlE4HIQN201E9zUfBAB+vBcrleNYKubAb4hnoQk+252QmxICt1w3FwEQreQEDE60Ltxeb99ijRTdWckzJSBQMamS7tN3RDgNDga2MyH/5mbSqhcDyhMaEGHCVn4kwwLEei+MYNrlPBEFDr1TMNRf8/9JFMDYYdZ2PgAFbxO40Rm0c26Dq9Wz+yyemZljjm9lDkAwDvtguGQYIT5sjMYpsLruu6Bs1W5tGDJjdMTH1uoetar/tvj3zqXT9xyeu1qWnPLY6FePA3mQYnPCPJMRg3xaDBUZNK7dho+7bkQkDcvqBSJMPn//6669/i5cvtb5ZjD1akmAgHJ6UEAO4QqFuvo/QElPmq94PnoYxDBjQbZavLh0zjXUrZzOxtgehGEg/qXrI1nOJSxDqJI5PfQbT0TYMbdqCtkSj1ppNC4lLcRyOAYXAt4lq22PxTTwdVHRrdDLxdqYg3ZiTfqIWPL3G6Dl5+gfyl4khRzg3ICCEgcXZMEt05mlWa5L1VtkZNxMCAdEF6NzGVDsEhm5Lm4YozMbbFIEkoRTrUQPBw1o/REDJR2USgJimvOhHyiAMLBTCEhlB2h0/sUY48WZm9Ri4xCKaBH6vz+bK8EB+ZaOiXx+VKZsOvtHS/EDiM2Egkqf8cj6kB4+U9TfwGJsBh2Y+8hkIOB9fMh37xWIwswbeGHI+C1xpC1zudwUdAtQvcFhbB6zT6VdGl93xnk+nncvtyk5YJq6QaKeo3Gp2QZNvSDezC5KuzivPOkDklaTbZ0SHlye5KC4f+sAWh4F/dz28d/hA9pcaDMjWvo4q9OC6xqVTwSR4dYs3Z7kvYRBOeQGDiPS2rEQgdRgGQVTKFNxbvVWXLQb1eBgolbLbp9vq78WHoFB4crt3x/leGLyQJgLdZ8KnU9UB7dEQKD+/7ft0kUBbxNMt4mLgCRPBTbWYJa5d87J8HQLv3sbo9d+LiBkUfgADIXpSp+Ue5Q+5ieD2uxQB5yoeABkfgds+BwARJzHqnvLE2LXdRucNBcFts1HSPV0I1ATA7JtbbAwxFPiysp+uocA5jjhvGHpSDhAYMgg4DWMBpBIA98nDb7xX/fejOhzY+9FPgy3es9cGiF6UM77J3+cyBZOKNf9/MAAg1dNpu/N459PFWAf4zrydLbe4zT6cc6tJANhfLj//14+gBKZH1x9YBMZVn61RCJW/lzOv3zy9439yml/47fMHQAcf/m82Cr1+9fzdszcvnz68434i+n/5Hx62aZvgQwAAAABJRU5ErkJggg=="
+             alt="" width="200" class="d-inline-block align-text-top">
+            
+          </a>
+          <div>
+            <h6>Доставка пиццы Бишкек</h6>
+            <h6>33 мин</h6>
+          </div>
+
+          <div>
+            <h6>0 (551) 550-550</h6>
+            <h6 class="text-secondary">Звонок по телефону</h6>
+          </div>
+
+          <div>Додокоины</div>
+          <button type="button" class="btn btn-light rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
+        </div>
+      </nav>
+
+      <!-- navbar start -->
+
+      <ul class="nav container">
+        <li class="nav-item">
+          <a class="nav-link active text-dark fw-bold aria-current="page" href="#">Пицца</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">Комбо</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">Закуски</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark fw-bold">Десерты</a>
+        </li>
+      </ul>
+
+      <!-- navbar end -->
+
+      <!-- carousel start -->
+      <div class="container d-flex ">
+        <div class="card border border-warning border-4 p-2 m-1" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuVvvCB4FsQcBxVHajzyFRYGSbyfPkOe9MQ&usqp=CAU" class="card-img-top" alt="...">
+        </div>
+        <div class="card border border-warning border-4 p-2 m-1" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRgoNr1ryGOTRm2gTU_zl9lby3-Z16jsk8Q&usqp=CAU" class="card-img-top" alt="...">
+        </div>
+        <div class="card border border-warning border-4 p-2 m-1" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuVvvCB4FsQcBxVHajzyFRYGSbyfPkOe9MQ&usqp=CAU" class="card-img-top" alt="...">
+        </div>
+        <div class="card border border-warning border-4 p-2 m-1" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRgoNr1ryGOTRm2gTU_zl9lby3-Z16jsk8Q&usqp=CAU" class="card-img-top" alt="...">
+        </div>
+      </div>
+      
+      <!-- carousel end -->
+
+      <!-- mini cards start -->
+
+      <div class="container">
+        <h5>Часто заказывают</h5>
+        <div class="d-flex justify-content-between">
+                <div class="shadow p-3 mb-5 bg-body rounded d-flex align-items-center col-3">
+                    <img src="https://cdn.dodostatic.net/static/Img/Products/3fe12c4bb05c470c9cb45fb423b7c049_138x138.jpeg" alt="pizza" width="60%">
+                    <div class="">
+                        <h6>Пепперони</h6>
+                        <h6>от 399 сом</h6>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-body rounded d-flex align-items-center col-3">
+                    <img src="https://cdn.dodostatic.net/static/Img/Products/3fe12c4bb05c470c9cb45fb423b7c049_138x138.jpeg" alt="pizza" width="60%">
+                    <div class="">
+                        <h6>Пепперони</h6>
+                        <h6>от 399 сом</h6>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-body rounded d-flex align-items-center col-3">
+                    <img src="https://cdn.dodostatic.net/static/Img/Products/3fe12c4bb05c470c9cb45fb423b7c049_138x138.jpeg" alt="pizza" width="60%">
+                    <div class="">
+                        <h6>Пепперони</h6>
+                        <h6>от 399 сом</h6>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-body rounded d-flex align-items-center col-3">
+                    <img src="https://cdn.dodostatic.net/static/Img/Products/3fe12c4bb05c470c9cb45fb423b7c049_138x138.jpeg" alt="pizza" width="60%">
+                    <div class="">
+                        <h6>Пепперони</h6>
+                        <h6>от 399 сом</h6>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+      <!-- mini cards end -->
+      <div class="d-flex justify-content-center">
+        <div class="shadow p-3 mb-5 bg-body rounded d-flex justify-content-between align-items-center">
+          <img src="https://cdn.dodostatic.net/site-static/dist/f30f1ab8cd7a7a54476d.svg" alt="" width="50%">
+          <div>
+              <h6>Без свинины</h6>
+              <h6 class="text-secondary">Мы готовим из цыпленка и говдины</h6>
+          </div>
+        </div>  
+      </div>
+
+      <!-- pizzas start -->
+
+      <div class="container">
+        <h4>Пицца</h4>
+        <div class="d-flex justify-content-between">
+          <div class="card border-white" style="width: 18rem;">
+            <img src="https://cdn.dodostatic.net/static/Img/Products/c940c5751e6d420e997d86c26a8ba16f_366x366.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Пицца из половинок</h5>
+              <p class="card-text">Соберите свою пиццу 35 см с двумя разными вкусами</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5>от 520 сом</h5>
+                <a href="#" class="btn btn-warning text-light rounded-pill">Собрать</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border-white" style="width: 18rem;">
+            <img src="https://cdn.dodostatic.net/static/Img/Products/e2393e247dc64ecbbf23c82243c0a399_366x366.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Сырная</h5>
+              <p class="card-text">Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5>от 259 сом</h5>
+                <a href="#" class="btn btn-danger bg-opacity-10 text-warning rounded-pill">Выбрать</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border-white" style="width: 18rem;">
+            <img src="https://cdn.dodostatic.net/static/Img/Products/e2393e247dc64ecbbf23c82243c0a399_366x366.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Сырная</h5>
+              <p class="card-text">Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5>от 259 сом</h5>
+                <a href="#" class="btn btn-danger bg-opacity-10 text-warning rounded-pill">Выбрать</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border-white" style="width: 18rem;">
+            <img src="https://cdn.dodostatic.net/static/Img/Products/e2393e247dc64ecbbf23c82243c0a399_366x366.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Сырная</h5>
+              <p class="card-text">Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5>от 259 сом</h5>
+                <a href="#" class="btn btn-danger bg-opacity-10 text-warning rounded-pill">Выбрать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pizzas end -->
+
+      <!-- info start -->
+
+      <div class="container mt-5 mb-3">
+        <h3 class="mb-4">Доставка и оплата</h3>
+        <div class="d-flex justify-content-between">
+          <div class="col-3">
+            <h6 class="text-warning">60 МИНУТ ИЛИ ПИЦЦА БЕСПЛАТНО</h6>
+            <p>Если мы не успеем доставить любые продукты, кроме сувенирной продукции и соусов, в течение 60 минут, курьер подарит вам сертификат на большую пиццу.</p>
+          </div>
+          <div class="col-4">
+            <h6 class="text-warning">
+              365 сом
+            </h6>
+            <p>Минимальная сумма доставки</p>
+            <h6 class="text-warning">
+              25 000 сом
+            </h6>
+            <p>
+              Максимальная сумма про оплате наличными
+            </p>
+            <p>Изображения продуктов могут отличаться от продуктов в заказе</p>
+  
+          </div>
+          <div>
+            <h5 class="text-warning">Зона доставки ограничена</h5>
+            <img src="https://cdn.dodostatic.net/site-static/dist/fcd1f4fda959e86e45a7.jpg" alt="" width="200px" height="200px">
+          </div>
+        </div>
+      </div>
+
+      <!-- info end -->
+
+      <div style="background-color: rgb(255, 205, 0);">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+          <h6 class="text-light">Стань тайным покупателем Додо Пиццы и получи пиццу в подарок</h6>
+          <button type="button" class="btn btn-light text-warning fw-bold rounded-pill">Заполнить анкету</button>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Вход на сайт</h5>
+              <div class="text-secondary">Подарим подарок на день рождения, сохраним адрес доставки и расскажем об акциях</div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
